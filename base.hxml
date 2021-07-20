@@ -1,0 +1,8 @@
+-cp src
+-main test.Main
+-lib coconut.haxeui
+-lib tink_state
+-lib tink_sql
+-lib haxeui-core
+
+-D theme=dark

@@ -1,0 +1,4 @@
+base.hxml
+-lib hxWidgets
+-lib haxeui-hxwidgets
+-cpp bin

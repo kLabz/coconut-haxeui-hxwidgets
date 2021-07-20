@@ -1,0 +1,29 @@
+-lib hxcpp:4.2.1
+-lib hscript:2.4.0
+-lib haxeui-core:git:git@github.com:haxeui/haxeui-core.git#153c1708a5d60613b7f9d9461e229951469ffa7b
+-lib haxeui-hxwidgets:git:git@github.com:haxeui/haxeui-hxwidgets.git#fb9a5f1bb435414b85b8dcf8fc9d75ff3b3adbdd
+-lib hxWidgets:git:git@github.com:haxeui/hxWidgets.git#d3e8ea55eeaa4b620d35a2bba94d70abbf9ffab5
+
+-lib coconut.data:0.12.1
+-lib coconut.diffing:0.5.0
+-lib coconut.haxeui:git:git@github.com:MVCoconut/coconut.haxeui.git#398dac7352a90dff296c449ed1f7c1d012ffe600
+-lib coconut.ui:0.12.0
+-lib html-entities:1.0.0
+
+-lib tink_anon:0.7.0
+-lib tink_core:2.0.2
+-lib tink_csss:0.2.3
+-lib tink_domspec:0.3.1
+-lib tink_hxx:0.25.0
+-lib tink_macro:1.0.0
+-lib tink_parse:0.4.1
+-lib tink_priority:0.1.4
+-lib tink_pure:0.6.0
+-lib tink_slice:0.2.0
+-lib tink_spatial:git:git@github.com:haxetink/tink_spatial.git#fb0d0a02ceed49325709215b5da0062fd8316c62
+-lib tink_sql:git:git@github.com:kLabz/tink_sql.git#fix/hxcpp
+-lib tink_state:1.0.0-beta.2
+-lib tink_streams:git:git@github.com:haxetink/tink_streams.git#c51ff28d69ea844995696f10575d1a150ce47159
+-lib tink_stringly:0.4.0
+-lib tink_svgspec:0.0.1
+-lib tink_url:git:git@github.com:haxetink/tink_url.git#4f53997c488e0ac33545a096968da6274bd7b064
