@@ -8,6 +8,7 @@ import test.data.Account;
 import test.data.Character;
 
 class AccountView extends View {
+	@:implicit var ctx:Context;
 	@:attribute var account:Account;
 	@:loaded var characters:Vector<Character> =
 		db.Character
@@ -16,6 +17,8 @@ class AccountView extends View {
 			.next(Vector.fromArray);
 
 	function render() {
+		trace(ctx.id, _coco_implicits.get(Context));
+
 		return <HBox>
 			<switch {characters}>
 				<case {Done(characters)}>

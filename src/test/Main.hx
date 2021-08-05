@@ -1,6 +1,7 @@
 package test;
 
 import coconut.haxeui.Renderer;
+import coconut.ui.Implicit;
 import haxe.ui.HaxeUIApp;
 import haxe.ui.core.Component;
 import haxe.ui.core.Screen;
@@ -20,7 +21,13 @@ class Main {
 
 			Screen.instance.title = "Test";
 			Screen.instance.addComponent(root);
-			Renderer.mount(root, <Accounts />);
+			Renderer.mount(root,
+				<Implicit defaults={[
+					Context => new Context({id: "test"})
+				]}>
+					<Accounts />
+				</Implicit>
+			);
 
 			app.start();
 		});
