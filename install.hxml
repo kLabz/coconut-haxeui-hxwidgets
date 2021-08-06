@@ -1,12 +1,12 @@
 -lib hxcpp:4.2.1
 -lib hscript:2.4.0
--lib haxeui-core:git:git@github.com:haxeui/haxeui-core.git#153c1708a5d60613b7f9d9461e229951469ffa7b
--lib haxeui-hxwidgets:git:git@github.com:haxeui/haxeui-hxwidgets.git#fb9a5f1bb435414b85b8dcf8fc9d75ff3b3adbdd
--lib hxWidgets:git:git@github.com:haxeui/hxWidgets.git#d3e8ea55eeaa4b620d35a2bba94d70abbf9ffab5
+-lib haxeui-core:git:git@github.com:haxeui/haxeui-core.git#b3c9517d34dafb530f436288a344b144521a79b6
+-lib haxeui-hxwidgets:git:git@github.com:haxeui/haxeui-hxwidgets.git#abe88e32e65e340859e3f6cf031bd8fb7bd56978
+-lib hxWidgets:git:git@github.com:haxeui/hxWidgets.git#5c3aeff81a90b7c50f2b73f86008f9ae76e023ee
 
 -lib coconut.data:0.12.1
 -lib coconut.diffing:0.5.0
--lib coconut.haxeui:git:git@github.com:MVCoconut/coconut.haxeui.git#398dac7352a90dff296c449ed1f7c1d012ffe600
+-lib coconut.haxeui:git:git@github.com:kLabz/coconut.haxeui.git#6c72c1ccec7bf27cd5b1977c4bdaca3bbc8600b8
 -lib coconut.ui:0.12.0
 -lib html-entities:1.0.0
 

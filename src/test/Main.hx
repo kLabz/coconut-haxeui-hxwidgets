@@ -1,11 +1,19 @@
 package test;
 
+import coconut.data.Model;
 import coconut.haxeui.Renderer;
+import coconut.haxeui.View;
+import coconut.ui.Implicit;
 import haxe.ui.HaxeUIApp;
+import haxe.ui.components.Button;
 import haxe.ui.core.Component;
 import haxe.ui.core.Screen;
 
-import test.view.Accounts;
+@:default(Context.DEFAULT)
+class Context implements Model {
+	@:constant var id:String;
+	static public final DEFAULT = new Context({id: "default"});
+}
 
 class Main {
 	static function main() {
@@ -20,7 +28,13 @@ class Main {
 
 			Screen.instance.title = "Test";
 			Screen.instance.addComponent(root);
-			Renderer.mount(root, <Accounts />);
+			Renderer.mount(root,
+				<Implicit defaults={[
+					Context => new Context({id: "test"})
+				]}>
+					<MyView />
+				</Implicit>
+			);
 
 			app.start();
 		});
@@ -40,5 +54,41 @@ class Main {
 			}
 		}, 100);
 
+	}
+}
+
+class MyView extends View {
+	@:state var counter:Int = 0;
+
+	function render() {
+		if (counter % 2 == 0)
+			return <MyButton key={counter} onClick={() -> counter++} />;
+		return <MyButton2 key={counter} onClick={() -> counter++} />;
+	}
+}
+
+class MyButton extends View {
+	@:implicit var context:Context;
+	@:attribute var onClick:Void->Void;
+
+	function new() {
+		trace('new');
+	}
+
+	function render() {
+		return <Button onClick={onClick} text={context.id} />;
+	}
+}
+
+class MyButton2 extends View {
+	@:implicit var context:Context;
+	@:attribute var onClick:Void->Void;
+
+	function new() {
+		trace('new');
+	}
+
+	function render() {
+		return <Button onClick={onClick} text={context.id} />;
 	}
 }
